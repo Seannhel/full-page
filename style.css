@@ -1,0 +1,550 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    height: 50px;
+    padding: 0 8px;
+    background: #4d80f4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+header img {
+    width: 20px;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* FEATURES */
+
+.features {
+    max-width: 1200px;
+    margin: 65px auto 80px;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.card {
+    min-height: 230px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card > img {
+    width: 70px;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.demo {
+    grid-column: span 2;
+    background: #b9d7fa;
+    display: flex;
+    overflow: hidden;
+    text-align: left;
+}
+
+.demo div {
+    width: 70%;
+}
+
+.demo h1 {
+    color: #4d80f4;
+    font-size: 19px;
+}
+
+.demo p {
+    color: #4770ac;
+}
+
+.phone {
+    align-self: flex-end;
+    width: 190px !important;
+    margin-bottom: -30px;
+}
+
+.app-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 8px;
+    padding: 9px 35px;
+    background: #4d80f4;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.app-button img {
+    width: 12px;
+}
+
+.clean {
+    background: #d2f1df;
+    color: #62bf7d;
+}
+
+.design {
+    background: #f7d5d5;
+    color: #f08e8e;
+}
+
+.development {
+    background: #ffe9bb;
+    color: #f2bd54;
+}
+
+.branding {
+    background: #d9d6fa;
+    color: #938ce9;
+}
+
+
+/* PLANNING */
+
+.planning {
+    min-height: 620px;
+    padding: 75px 20%;
+    background: #9590e6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+.planning-left {
+    width: 300px;
+    color: white;
+}
+
+.planning-left img {
+    width: 270px;
+}
+
+.planning-left h2 {
+    margin-top: 60px;
+    font-size: 22px;
+}
+
+.planning-left p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.planning-card {
+    width: 270px;
+    padding: 25px;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.planning-card img {
+    height: 190px;
+    object-fit: contain;
+}
+
+.planning-card h2 {
+    font-size: 17px;
+    color: #333;
+}
+
+.planning-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.planning-card > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background: #d4d1fb;
+    color: #333;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+    max-width: 620px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.small-title {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+.testimonials > h2 {
+    margin: 20px 0 10px;
+    color: #9590e6;
+    font-size: 27px;
+}
+
+.testimonial-intro {
+    line-height: 1.6;
+    color: #333;
+}
+
+.testimonial {
+    margin-top: 22px;
+    padding: 27px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.testimonial img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    margin-top: 0;
+    line-height: 1.7;
+}
+
+.testimonial h3 {
+    color: #111;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.pink {
+    background: #f3bcbc;
+}
+
+.yellow {
+    background: #f9dda3;
+}
+
+.green {
+    background: #b9e5c9;
+}
+
+
+/* BENEFITS */
+
+.benefits {
+    padding: 50px 0 40px;
+    background: #9590e6;
+}
+
+.benefits > h2 {
+    margin: 0 0 45px;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.benefit-grid article {
+    min-height: 260px;
+    padding: 25px 17px;
+    background: #f5f5ff;
+    border-radius: 13px;
+}
+
+.benefit-grid h3 {
+    margin: 0;
+    color: #9590e6;
+    font-size: 45px;
+}
+
+.benefit-grid h4 {
+    color: #9590e6;
+    font-size: 14px;
+}
+
+.benefit-grid p {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.benefit-grid a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 22px;
+    background: #9590e6;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* ABOUT */
+
+.about {
+    min-height: 600px;
+    padding: 70px 2%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 40px;
+}
+
+.about-text h2 {
+    margin-top: 0;
+    color: #9590e6;
+    font-size: 48px;
+}
+
+.about-text p {
+    max-width: 780px;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.about-person {
+    position: relative;
+    padding-right: 50px;
+}
+
+.about-person > img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote {
+    position: absolute;
+    right: 60px;
+    top: -30px;
+    color: #9590e6;
+    font-size: 70px;
+}
+
+.about-person h3 {
+    color: #9590e6;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.about-person a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 220px;
+    padding: 9px;
+    background: #9590e6;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.about-person a img {
+    width: 13px;
+}
+
+
+/* GET STARTED */
+
+.start {
+    padding: 50px 20px;
+    background: #9590e6;
+    color: white;
+    text-align: center;
+}
+
+.start > p:first-child {
+    color: #cdcaff;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.start h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.start h3 {
+    margin: 0;
+    color: #f7c55f;
+    font-size: 65px;
+}
+
+.start > p {
+    max-width: 470px;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
+.start > a {
+    display: block;
+    width: 205px;
+    margin: 20px auto;
+    padding: 14px;
+    background: white;
+    color: #9590e6;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.start small {
+    display: block;
+    font-size: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    .demo {
+        grid-column: span 2;
+    }
+
+    .planning {
+        padding: 60px 10%;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .about {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .demo {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .demo div {
+        width: 100%;
+    }
+
+    .phone {
+        margin: 20px auto -30px;
+    }
+
+    .planning {
+        padding: 60px 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planning-left,
+    .planning-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 50px 25px;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    .quote {
+        right: 20px;
+    }
+
+    .start h2 {
+        font-size: 28px;
+    }
+
+    .start h3 {
+        font-size: 55px;
+    }
+}
