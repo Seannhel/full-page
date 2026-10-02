@@ -548,3 +548,17 @@ footer {
         font-size: 55px;
     }
 }
+
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #222;
+  color: white;
+}
+
+.footer img {
+  width: 30px;
+  margin-top: 10px;
+}
